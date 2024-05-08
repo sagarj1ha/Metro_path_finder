@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <a href="index.html">Metro path finder</a>
+
+        </div>
+        <div class="options">
+            <div>
+                <button class="outline-btn" id="add-edge-enable" onclick="addEdges()">
+                    Add routes
+                </button>
+                <button class="outline-btn reset-btn" onclick="resetDrawingArea()" disabled>
+                    Clear
+                </button>
+            </div>
+            <div>
+                <input type="text" inputmode="numeric" id="source-node" placeholder="Start Station" />
+                <button class="outline-btn run-btn" onclick="findShortestPath(this)" disabled>
+                    Run
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="drawing-area">
+        <p class="click-instruction">Click to create STATION</p>
+      </div>
+      <div class="path"></div>
+    
+    
+    
+      <script src="script.js"></script>
+      
+
+</body>
+
+</html>
